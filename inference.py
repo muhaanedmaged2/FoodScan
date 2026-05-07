@@ -190,7 +190,7 @@ def predict(image_bgr):
 
     return {
         "items":           items,
-        "total_weight_g": round(sum(item["weight_g"] for item in items), 1)
+        "total_weight_g": round(sum(item["weight_g"] for item in items), 1),
         "total_calories":  round(total_calories, 1),
         "annotated_image": result.plot(),   # BGR numpy array
     }
