@@ -1,0 +1,7 @@
+weights/
+*.pt
+*.pth
+__pycache__/
+*.pyc
+.env
+output.jpg
