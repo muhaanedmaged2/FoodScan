@@ -31,7 +31,7 @@ def load_models():
 
     _device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    yolo_path = "best.pt"
+    yolo_path = os.path.join(os.path.dirname(__file__), "best.pt")
     _yolo = YOLO(yolo_path)
 
     _midas = torch.hub.load("intel-isl/MiDaS", "MiDaS_small", trust_repo=True)
