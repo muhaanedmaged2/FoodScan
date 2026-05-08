@@ -159,6 +159,7 @@ def predict(image_bgr):
     if coin_mask is None:
         return {
             "items": [],
+            "total_weight_g": 0,
             "total_calories": 0,
             "annotated_image": result.plot(),
             "error": "No coin detected – place a 1-pound coin next to the food.",
@@ -168,6 +169,7 @@ def predict(image_bgr):
     if pixel_size_cm is None:
         return {
             "items": [],
+            "total_weight_g": 0,
             "total_calories": 0,
             "annotated_image": result.plot(),
             "error": "Could not measure coin size in image.",
